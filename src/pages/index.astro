@@ -2,41 +2,48 @@
 import Layout from '../layouts/Layout.astro';
 ---
 
-<Layout title="Improve - AI-Powered Text Enhancement Extension">
-	<main class="min-h-screen flex flex-col items-center justify-center px-6">
-		<!-- Logo/Title -->
-		<div class="text-4xl font-semibold mb-8 text-center text-[#e0e0e0] relative">
-			Improve
-			<sup class="text-sm text-[#a0a0a0] absolute -top-2 -right-8">v2.3</sup>
+<Layout title="Improve">
+	<main class="h-screen flex flex-col items-center justify-between px-6 py-4">
+		<!-- Main Content Container -->
+		<div class="flex flex-col items-center justify-center flex-1">
+			<!-- Logo/Title -->
+			<div class="text-3xl md:text-4xl font-semibold mb-4 text-center text-[#e0e0e0] relative">
+				Improve
+				<sup class="text-sm text-[#a0a0a0] absolute -top-2 -right-8">v2.3</sup>
+			</div>
+			
+			<!-- Tagline -->
+			<h1 class="text-base md:text-lg font-normal text-[#a0a0a0] mb-6 text-center max-w-2xl">
+				Improve is a Browser extension that uses AI to enhance writing quality directly in your browser toolbar, offering five different writing styles and showing changes with inline strikethrough formatting to help users improve grammar, clarity, and tone anywhere on the web.
+			</h1>
+			
+			<!-- Download Links -->
+			<div class="flex flex-col sm:flex-row gap-4">		
+				<a href="https://chrome.google.com/webstore" target="_blank" rel="noopener noreferrer" 
+				   class="flex items-center justify-center px-4 py-3 bg-[#2f2f2f] text-[#e0e0e0] rounded-lg font-normal hover:bg-[#3f3f3f] transition-colors duration-200 min-w-[200px] text-base">
+					<img src="/Chrome--Streamline-Svg-Logos.png" alt="Chrome" class="w-6 h-6 mr-3" />
+					Comming Soon
+				</a>
+				<a href="https://addons.mozilla.org/en-US/firefox/addon/improve/" target="_blank" rel="noopener noreferrer"
+				   class="flex items-center justify-center px-4 py-3 bg-[#2f2f2f] text-[#e0e0e0] rounded-lg font-normal hover:bg-[#3f3f3f] transition-colors duration-200 min-w-[200px] text-base">
+					<img src="/Firefox--Streamline-Svg-Logos.png" alt="Firefox" class="w-6 h-6 mr-3" />
+					Get for Firefox
+				</a>
+			</div>
+		
+			<!-- About ChangeLogs Section -->
+
 		</div>
 		
-		<!-- Tagline -->
-		<h1 class="text-lg md:text-xl font-normal text-[#a0a0a0] mb-8 text-center max-w-2xl">
-			Improve is a Browser extension that uses AI to enhance writing quality directly in your browser toolbar, offering five different writing styles and showing changes with inline strikethrough formatting to help users improve grammar, clarity, and tone anywhere on the web.
-		</h1>
-		
-		<!-- Download Links -->
-		<div class="flex flex-col sm:flex-row gap-6">		<a href="https://chrome.google.com/webstore" target="_blank" rel="noopener noreferrer" 
-		   class="flex items-center justify-center px-8 py-4 bg-[#2f2f2f] text-[#e0e0e0] rounded-lg font-normal hover:bg-[#3f3f3f] transition-colors duration-200 min-w-[220px] text-lg">
-			<img src="/Chrome--Streamline-Svg-Logos.png" alt="Chrome" class="w-8 h-8 mr-4" />
-			Get for Chrome
-		</a>
-					<a href="https://addons.mozilla.org/en-US/firefox/addon/improve/" target="_blank" rel="noopener noreferrer"
-		   class="flex items-center justify-center px-8 py-4 bg-[#2f2f2f] text-[#e0e0e0] rounded-lg font-normal hover:bg-[#3f3f3f] transition-colors duration-200 min-w-[220px] text-lg">
-			<img src="/Firefox--Streamline-Svg-Logos.png" alt="Firefox" class="w-8 h-8 mr-4" />
-			Get for Firefox
-		</a>
-		</div>
+		<!-- Footer -->
+		<footer class="w-full text-center py-4 px-6">
+			<p class="text-[#a0a0a0] text-sm">
+				Improve is a extension built by 
+				<a href="https://www.adityavijayvargiya.live" target="_blank" rel="noopener noreferrer" 
+				   class="text-[#e0e0e0] hover:text-white transition-colors duration-200">
+					Aditya Vijayvargiya
+				</a>
+			</p>
+		</footer>
 	</main>
-	
-	<!-- Footer -->
-	<footer class="w-full text-center py-8 px-6">
-		<p class="text-[#a0a0a0] text-sm">
-			Improve is a extension built by 
-			<a href="https://www.adityavijayvargiya.live" target="_blank" rel="noopener noreferrer" 
-			   class="text-[#e0e0e0] hover:text-white transition-colors duration-200">
-				Aditya Vijayvargiya
-			</a>
-		</p>
-	</footer>
 </Layout>
